@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Face-detector</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .wrap {
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrap>* {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .face {
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h1>Part 1</h1>
+
+        <form action="./index.html">
+            <button class="redirectionButton">Main</button>
+        </form>
+        <div class="wrap">
+            <video class="webcam"></video>
+            <canvas class="video"></canvas>
+            <canvas class="background"></canvas>
+        </div>
+    </div>
+    <script src="part_1.js"></script>
+</body>
+
+</html>
